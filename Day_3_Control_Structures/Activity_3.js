@@ -1,5 +1,6 @@
 // *************  Switch Case  *************
 
+// Task 4:
 let day = 7
 
 switch(day) {
@@ -27,3 +28,27 @@ switch(day) {
     default:
         console.log("Please enter number 1-7")
 }
+
+// Task 5:
+
+let marks = 90
+let grade;
+
+switch(marks) {
+    case 90:
+        grade = 'A'
+        break
+    case 80:
+        grade = 'B'
+        break
+    case 70:
+        grade = 'C'
+        break
+    case 40:
+        grade = 'D'
+        break
+    default:
+        grade = 'F'
+}
+
+console.log(grade)
