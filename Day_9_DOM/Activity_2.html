@@ -12,6 +12,8 @@
         <li class="lists">Java</li>
         <li class="lists">Python</li>
     </ul>
+
+    <img src="./image.jpeg" alt="">
 </body>
 <script>
     // Task 3:
@@ -38,5 +40,16 @@
 
     // Task 6:
     const lastLi = document.querySelector('li:last-child').remove()
+
+    // Task 7:
+    const changeImage = document.querySelector('img')
+    changeImage.setAttribute("src",'./image-2.jpeg')
+
+    // Task 8:
+    const ul = document.querySelector('ul')
+    ul.className = 'myUl'
+    console.log(ul)
+    ul.className = ""
+    console.log(ul)
 </script>
 </html>
