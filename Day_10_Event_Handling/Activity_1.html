@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+    <style>
+
+        #myImage {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body style=" background-color: black;">
+    <div>
+        <p style="color: aliceblue;">
+            Hi!, I'm Atul Kumar Pandey
+        </p>
+        <button>Change Paragraph</button>
+    </div>
+
+    <div>
+        <img id="myImage" src="../Day_9_DOM/image-2.jpeg" alt="" style="margin-top: 50px;"/>
+    </div>
+</body>
+
+<script>
+    // Task 1:
+    const para = document.querySelector('p')
+    console.log(para)
+    const btn = document.querySelector('button')
+    console.log(btn)
+    btn.addEventListener('click', function () {
+        const newPara = document.createTextNode("Hello!, I'm Atul")
+        para.innerText = ""
+        para.append(newPara)
+    })
+
+    // Task 2:
+    const image = document.getElementById('myImage')
+    console.log(image)
+    image.addEventListener('dblclick', () => {
+        if (image.style.display === 'none') {
+            img.style.display = 'block'
+        } else {
+            img.style.display = 'none'
+        }
+    })
+
+
+</script>
+</html>
