@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+
+        #myDiv {
+            height: 200px;
+            width: 200px;
+            color: aliceblue;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div id="myDiv" style="background-color: blueviolet;">
+        Hello
+    </div>
+</body>
+<script>
+    const div = document.getElementById('myDiv')
+    const originalColor = div.style.backgroundColor
+    console.log(originalColor)
+    div.addEventListener('mouseover', () => {
+        div.style.backgroundColor = 'green'
+    })
+
+    div.addEventListener('mouseout', () => {
+        div.style.backgroundColor = originalColor
+    })
+</script>
+</html>
